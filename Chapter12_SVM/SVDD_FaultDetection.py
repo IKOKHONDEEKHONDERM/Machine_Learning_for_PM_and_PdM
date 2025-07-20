@@ -3,7 +3,11 @@
 ## %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 #%% read data
+import pandas as pd
 import numpy as np
+
+df = pd.read_csv(r'D:\WORK\Project_Year4\Machine_Learning_for_PM_and_PdM\Chapter12_SVM\Metal_etch_2DPCA_trainingData.csv')
+print(df.head())
 
 X_train = np.loadtxt('Metal_etch_2DPCA_trainingData.csv', delimiter=',')
 
